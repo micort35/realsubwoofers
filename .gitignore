@@ -1,5 +1,3 @@
-*
-!realsubwoofers.py
-!.gitignore
-!README.md
-!LICENSE
+.vscode/
+venv/
+layers/

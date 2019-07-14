@@ -1,10 +1,11 @@
 # realsubwoofers 
 
-A Twitter bot that tweets images of pinnipeds or swimming dogs (subwoofers!) daily!
+A Twitter bot that tweets images of pinnipeds or swimming dogs (subwoofers!) daily
 
 ## Design
 
-Deployed via AWS Lambda, this bot uses the Twython API to interface with Twitter and tweet at a random follower with an uplifting message daily at 10:00 (UTC-4). The tweet consists of a random message selected from a list of wholesome compliments, as well as a random image or .gif from a curated library of subwoofers.
+Deployed via AWS Lambda, this bot uses the Twython API to interface with Twitter and tweet at a random follower with an uplifting message daily at 10:00AM (UTC-4). The tweet consists of a random message selected from a list of wholesome compliments, as well as a random image or gif from a curated library of subwoofers. It also makes use of
+Lambda's Layers functionality to decouple the application logic from both assets and dependencies.
 
 ## TODO: 
 
