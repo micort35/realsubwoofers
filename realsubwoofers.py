@@ -49,7 +49,8 @@ def tweet(test=False):
 def lambda_handler(event, context):
     """Entry point for AWS Lambda"""
 
-    if event['test']:
+    is_test = event.get('test')
+    if is_test:
         print('TESTING: Invoked by AWS Lambda test')
         tweet(test=True)
     else:
